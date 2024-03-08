@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body onload="getValue(),getQuote()">
+
+
+    <!-- Make the weather app containers and form here -->
+    <div id="hero">
+      <div class="warpper">
+       <div class="sidebar">
+        <div class="search-container">
+          <form id="form"  >
+            <!-- <i class="fa-solid fa-temperature-half"></i> -->
+              <div class="thermo"><i class="ri-temp-hot-line"></i></div>
+            
+            
+            <input onchange="getValue()" id="userInput" name="Kanpur" class="search-box" type="text" placeholder  ="Enter City.." >
+            <div class="btn"> <button   id="sub" type="submit" disabled="true"><i class="ri-search-line"></i></button></div>
+           
+          </form>
+        </div>
+        <div class="location-and-date" style="display: flex;">  
+          <h1 id="gh" style="margin-left: 50px; margin-top: 10px ;" class="location-and-date__location">London </h1>  
+          <h2 id="span" style=" font-size:29px; margin-top: 14px; font-weight: 700;">, UK</h2>
+            
+        </div>
+        <div class="dinank"><div id="dateFull" style="font-size: 29px; margin-left: 43px; margin-top: 10px; font-weight: 500;"  class="date"><p class="din">Sunday 4th August</p></div></div>
+        
+        <!-- <div id="time"><p id="samay" style="margin-top: 10px; margin-left: 20px; font-size: 23px;">12:00</p></div> -->
+
+        <div class="summary">
+          <div id="main_temp" class="mainTemp"  style="font-size: 55px; font-weight: 600;margin-left: 96px; margin-top: 47px;">
+            23&deg;C
+          </div>
+         
+
+
+          <div class="current-stats" style="margin-top: 20px;">
+            <div class="op1">
+              <div id="feelslike" class="current-stats__value">23&deg;</div>
+              <div class="current-stats__label">Feels Like</div>
+              <div id="pressure" class="current-stats__value">0&deg;</div>
+              <div class="current-stats__label">Pressure</div>
+            </div>
+            <div class="op1">
+              <div id="humidity" class="current-stats__value">7mph</div>
+              <div class="current-stats__label">Humidity</div>
+              <div id="visibility" class="current-stats__value">0%</div>
+              <div class="current-stats__label">Visibility</div>
+            </div>
+            
+          </div>
+
+        </div>
+        
+        
+       </div>
+       <div class="main">
+       
+        <div class="naw"> <h3 class="nw" style="margin-top: 20px; margin-left: 20px;">NATIONAL <br> WEATHER</h3></div>
+
+        <h2 id="ws" class="WS">Weather Forecast For City</h2>
+        <div class="current-temperature">
+          <div class="seccont">
+            <div class="current-temperature__content-container">
+              <div  id="shi"
+              class="current-temperature__value">21&deg;</div>
+              <div id="cts" class="current-temperature__summary">Mostly Sunny</div>
+            </div>
+            <div class="current-temperature__icon-container">
+              <img  id="imgf" src="mostly-sunny.svg" class="current-temperature__icon" alt="">
+            </div>
+            
+          </div>
+         
+        </div>
+        <div class="currSum"><div class="current-stats">
+          <div class="op">
+            <div id="th" class="current-stats__value">23&deg;</div>
+            <div class="current-stats__label">High</div>
+            <div id="tm" class="current-stats__value">0&deg;</div>
+            <div class="current-stats__label">Low</div>
+          </div>
+          <div class="op2">
+            <div id="hawa" class="current-stats__value">7mph</div>
+            <div class="current-stats__label">Wind</div>
+            <div  class="current-stats__value">0%</div>
+            <div class="current-stats__label">Rain</div>
+          </div>
+          <div>
+            <div id="rise" class="current-stats__value">05:27</div>
+            <div class="current-stats__label">Sunrise</div>
+            <div  id="set" class="current-stats__value">20:57</div>
+            <div class="current-stats__label">Sunset</div>
+          </div>
+        </div></div>
+        
+      
+      </div>
+      <div class="Qutoes" style="width: 435px; margin-left: 201px; margin-top: 91px;">
+        <p id="qutoe" style="font-size:20px  ;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium nemo blanditiis corrupti molestias.<br> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<h2 id="author">Ishu Tripathi</h2> </p>
+      </div>
+       
+     
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+/* Write your desired css here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(#adadbc,#89889c,#5a5b5b); */
+    /* background-color: rgb(0, 162, 255); */
+    /* background-image: url(https://images.unsplash.com/photo-1487621167305-5d248087c724?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; */
+}
+body{
+  background-image: linear-gradient(#adadbc,#89889c,#5a5b5b);
+}
+
+.warpper{
+  display: flex;
+  /* background-image: url(img.jpg); */
+}
+.sidebar{
+    /* background-color: grey; */
+    width: 20%;
+    height: 800px;
+    border-right: 1px solid green;
+    border-top-right-radius: 30px;
+}
+.search-container{
+    border-bottom: 2px solid red;
+    margin: 10px;
+}
+input[type=text] {
+    margin-left: 10px;
+    width: 220px;
+    border: none;
+    background-color: #adadbc;
+    
+  }
+
+input[type="text"]:focus {
+   
+    outline : none;
+    
+}
+
+  button[type=submit]{
+    border: none;
+    background-color: #adadbc;
+   
+  }
+  .location-and-date{
+    margin: 20px;
+  }
+  .main{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .main .WS{
+    margin-top: 60px;
+    margin-left: 147px;
+  }
+  .seccont{
+    display: flex;
+  }
+  .current-temperature{
+    margin: 20px;
+  }
+  .current-temperature__icon{
+    width: 376px;
+    margin-left: -7px;
+    margin-top: 0px;
+  }
+  .current-temperature__summary{
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .current-temperature__value{
+    font-size: 3rem;
+    margin-top: 255px;
+    margin-left: 10px;
+  }
+  .current-stats {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .current-stats__value {
+    margin-top: 1em;
+    font-size: 1.44em;
+  }
+  
+  .current-stats__label {
+    color: rgba(255,255,255,0.6);
+  }
+  @media  (max-width:1024px) {
+    body{
+      overflow-x:hidden;
+    }
+    .warpper{
+      display: flex;
+      flex-direction: column;
+    }
+    .naw{
+      margin-left: 0px;
+      margin-top: -820px;
+      font-size: 30px;
+    }
+    
+  .sidebar{
+    
+    border: none;
+    
+  }
+  .search-container{
+   
+    margin-left: 350px;
+    margin-top: 50px;
+}
+input[type=text] {
+  
+  font-size: 30px;
+  margin-left: 10px;
+  width: 320px;
+ 
+  border: none;
+  background-color: #adadbc;
+  margin-top: 20px;
+  
+}
+input[type="text"]:focus {
+   
+  outline : none;
+  
+}
+
+
+.btn{
+  margin-top:  -35px;
+ 
+  margin-left: 110px;
+}
+.thermo{
+  display: none;
+  
+}
+button[type=submit]{
+  border: none;
+  background-color: #adadbc;
+  margin-left: 220px;
+  margin-bottom: 110px;
+  font-size: 30px ;
+ 
+}
+.location-and-date{
+  margin-left: 380px;
+  margin-top: -40px;
+  font-size: 30px;
+}
+.main{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.main .WS{
+  font-size: 2.5rem;
+  margin-left: 290px;
+}
+.seccont{
+  display: flex;
+}
+
+.current-temperature{
+  margin: 0px;
+}
+.current-temperature__icon{
+  width: 250px;
+  margin-left: 200px;
+  margin-top: 80px;
+}
+.Qutoes{
+  display: none;
+}
+
+.current-temperature__value{
+  font-size: 2.5rem;
+  margin-top: 255px;
+  margin-left: 300px;
+  font-weight: 50000;
+}
+.current-temperature__summary{
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+}
+.current-stats {
+  
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.currSum{
+  margin-left: 200px;
+}
+.current-stats__value {
+  margin-top: 1em;
+  font-size: 1.44em;
+}
+
+.current-stats__label {
+  color: rgba(255,255,255,0.6);
+}
+.dinank{
+ 
+  width: 400px;
+  margin-top: -270px;
+  margin-left:600px;
+}
+
+
+.summary{
+  margin-top: 433px;
+}
+.op{
+  margin-left: 188px;
+}
+.op1{
+  margin-left: 120px;
+}
+.op2{
+  margin-left: 45px;
+}
+
+
+
+
+  }
+
